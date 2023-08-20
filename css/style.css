@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+/* *{
+    border: 1px solid red;
+}
+
+*/
+
+p strong {
+    border: 1px solid blue;
+}
+
+ul > li {
+    border: 1px solid red;
+}
+
+ul li:nth-of-type(2n) { /* 짝수 -> 2n == even */
+    color: aqua;
+}
+ul li:nth-of-type(2n-1) { /* 홀수 -> 2n-1 == odd */
+    color: pink;
+}
+ul li:last-child {
+    border: 1px solid yellow;
+}
+
+input[type="text"] {
+    border: 1px solid black;
+}
+input[type="password"] {
+    border: 1px solid peru;
+}
+
+h1:hover {
+    color: chartreuse;
+}
+
+h1:after {
+    content: "after content";
+    color: red;
+}
+
+.items {
+    background-color: darkslateblue;
+}
+
+#child-li {
+    background-color: black;
+}
