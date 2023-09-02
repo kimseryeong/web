@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+table, th, td{
+    border: 0.5px solid lightgrey;
+}
+
+section{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+    float: left;
+    margin: 50px;
+    perspective: 400px;
+}
+section article{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    opacity: 0.3;
+    transform: rotateY(0deg);
+    transition-property: transform opacity;
+    transition-duration: 1s;
+    transition-delay: 0s;
+    transition-timing-function: cubic-bezier(.14,.69,.85,.43);
+}
+section:hover article{
+    transform: rotateY(85deg);
+    background-color: blue;
+}
