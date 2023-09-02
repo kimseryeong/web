@@ -1,0 +1,32 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap');
+
+table, th, td{
+    border: 0.5px solid lightgrey;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 12px;
+}
+
+@keyframes rotation{
+    0%{
+        transform: rotate(0deg);
+
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+article{
+    width: 400px; height: 400px; background-color: hotpink; margin: 100px auto;
+    animation-name: rotation;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-play-state: running;
+    transform: rotate(50deg);
+}
+article:hover{
+    animation-play-state: paused;
+}
