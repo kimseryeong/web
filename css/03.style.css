@@ -135,3 +135,46 @@ strong, em{
     /* display: inline-block; /* 강제로 인라인 요소와 블록 요소를 같이 사용하여 높이 지정하기 */
     display: block; /* 강제로 인라인 요소를 블록 요소로 변환 */
 }
+
+
+.section1{
+    width:300px;
+    height: 200px;
+    border: 1px solid #000;
+    background-image: url(/img/supergosim.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.section2{
+    width:300px;
+    height: 200px;
+    border: 1px solid #000;
+    background-image: url(/img/supergosim.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+section.img-fix{
+    width: 90vw;
+    height: 90vh;
+    margin: 4vh auto;
+    border: 1px solid #000;
+}
+
+section.img-fix article{
+    width: 100%;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+section.img-fix article:nth-of-type(1){
+    background-image: url(/img/kitten1.jpg);
+}
+section.img-fix article:nth-of-type(2){
+    background-image: url(/img/kitten2.jpg);
+}
