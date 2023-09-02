@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Nanum+Myeongjo:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Nanum+Myeongjo&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+    
+h1, h2, h3{
+    font-family: 'Nanum Brush Script';
+}
+
+article{
+    border: 1px solid pink;
+}
+ul li {
+    background-color: rgb(222, 205, 255);
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+.wrap{
+    width: 400px;
+    margin: 100px auto;
+    border: 5px solid black;
+}
+
+.wrap .left{
+    width:200px;
+    height: 200px;
+    background-color: pink;
+    float: left;
+}
+.wrap .right{
+    width:200px;
+    height: 200px;
+    background-color: rgb(124, 236, 254);
+    float: left;
+}
+
+/* 부모 요소에 float의 영향을 해제하여 높잇값 인식 */
+.wrap::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.wrap3{
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    margin-top:10px;
+    position: relative;
+}
+section.position-1{
+    width: 200px;
+    height: 200px;
+    background-color: greenyellow;
+    position: absolute;
+    top: 50px;
+    left: 50px;;
+    z-index: 2;
+}
+section.position-2{
+    width: 200px;
+    height: 200px;
+    background-color: #fffc2f;
+    position:absolute;
+    bottom: 50px;
+    right: 50px;
+    z-index: 3;
+    opacity: 0.5;
+}
+
+.wrap2{
+    width: 400px;
+    border: 5px solid black;
+    margin: 50px auto;
+}
+.wrap2::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.wrap2 .div-left{
+    width: 200px;
+    height: 200px;
+    background-color: #d19dff; 
+    float: left;
+}
+.wrap2 .div-right{
+    width: 200px;
+    height: 200px;
+    background-color: hsl(41, 100%, 59%);
+    float: left;
+    position: relative;
+}
+
+.wrap2 .div-right .box{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 0, 0);
+    /* absolute 속성 사용하여 박스 쉽게 이동시키기 */
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+}
+
+.wrap2 .div-bottom{
+    width: 400px;
+    height: 50px;
+    background-color: cornflowerblue;
+    float: left;
+}
