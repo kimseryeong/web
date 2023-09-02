@@ -1,0 +1,24 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    background-color: lightcyan;
+}
+section{
+    width: 100%;
+    border: 10px solid skyblue;
+    /*display: flex; /* 가로 정렬 */
+    display: inline-flex;
+    flex-direction: row; /* 입력하지 않으면 기본값 가로 */
+    flex-wrap: wrap; /* 줄바꿈  */
+}
+section article{
+    width: 100px;
+    height: 100px;
+    background-color: #0099ff;
+    border: 1px solid #000;
+}
