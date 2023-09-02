@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04-1. 콘텐츠 모양을 자유롭게 변형하기</title>
+    <link rel="stylesheet" href="/css/04장/04-1.css">
+    <link rel="stylesheet" href="/css/04장/style.css">
+</head>
+<body>
+    <h1>04장. 인터랙티브 웹을 위한 css 다루기</h1>
+    <h2>04-1. 콘텐츠 모양을 자유롭게 변형하기</h2><br>
+
+    <table class="script">
+        <thead class="script">
+            <tr>
+                <th>속성명</th>
+                <th>속성값</th>
+                <th>설명</th>
+            </tr>
+        </thead>
+        <tbody class="script">
+            <tr>
+                <td rowspan="4">transform(2D)</td>
+                <td>scale</td>
+                <td>선택한 요소의 크기를 확대, 축소합니다. 현재 크기의 비율을 기준으로 1보다 크면 확대하고, 1보다 작으면 축소합니다.</td>
+            </tr>
+            <tr>
+                <td>skew</td>
+                <td>선택한 요소를 x축 또는 y축으로 비틀어서 변형합니다. 원하는 각도를 지정하여 기울기를 조절할 수 있습니다.</td>
+            </tr>
+            <tr>
+                <td>translate</td>
+                <td>선택한 요소를 현재 위치 기준에서 x축 또는 y축으로 이동할 수 있음</td>
+            </tr>
+            <tr>
+                <td>rotate</td>
+                <td>선택한 요소를 회전시킴. 원하는 각도를 지정하여 회전할 수 있음</td>
+            </tr>
+            <tr>
+                <td rowspan="2">transform(3D)</td>
+                <td>rotateX, rotateY</td>
+                <td>선택한 요소를 x축 또는 y축으로 입체감 있게 회전</td>
+            </tr>
+            <tr>
+                <td>translateZ</td>
+                <td>선택한 요소를 z축으로 입체감 있게 보이면서 이동</td>
+            </tr>
+            <tr>     
+                <td>perspective</td>
+                <td>px</td>
+                <td>3D 효과가 적용된 요소가 입체감 있게 보이도록 부모 요소에 perspective 속성 적용, 원근감 부여</td>
+            </tr>    
+            <tr>
+                <td>transform-style</td>
+                <td>preserve-3d</td>
+                <td>3D 효과가 적용된 요소에 모션 처리를 하면 해당 3D 효과가 풀리는데, 이때 부모 요소에 perserve-3d 속성을 적용하여 효과 유지</td>
+            </tr>    
+            <tr>
+                <td>transform-origin</td>
+                <td>가로축, 세로축</td>
+                <td>요소의 변형이 일어나느 중심축을 가로축, 세로축 기준으로 변경</td>
+            </tr>
+        </tbody>
+    </table><br>
+
+    <div class="2d-div">
+        <h3>[2D 변형 속성]</h3>
+        <section>
+            <article></article>
+        </section>
+        <section>
+            <article></article>
+        </section>
+        <section>
+            <article></article>
+        </section>
+        <section>
+            <article></article>
+        </section>
+    </div>
+    
+    <h3>[3D 변형 속성]</h3>
+    <section class="sec-3d">
+        <article></article>
+    </section>
+    <section class="sec-3d">
+        <article></article>
+    </section>
+    <section class="sec-3d">
+        <article></article>
+    </section>
+    <section class="sec-3d">
+        <article></article>
+    </section>
+</body>
+</html>
