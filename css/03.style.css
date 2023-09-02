@@ -120,3 +120,18 @@ div:nth-of-type(2){
 div:nth-of-type(3){
     border: 10px dotted aqua; /* 축약형 */
 }
+
+table tr td{
+    border: 0.5px solid lightgray;
+}
+
+p.block{
+    border: 1px solid palevioletred;
+    height: 100px;
+}
+strong, em{
+    background-color: bisque;
+    height: 50px; /* 높잇값 적용 안 됨 */
+    /* display: inline-block; /* 강제로 인라인 요소와 블록 요소를 같이 사용하여 높이 지정하기 */
+    display: block; /* 강제로 인라인 요소를 블록 요소로 변환 */
+}
