@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6장. 자바스크립트로 웹 페이지 제어하기</title>
+    <link rel="stylesheet" href="/css/06장/06-2.css">
+    <link rel="stylesheet" href="/css/06장/style.css">
+    
+</head>
+<body>
+    <h1>6장. 자바스크립트로 웹 페이지 제어하기</h1>
+    <h2>06-2. 자바스크립트로 HTML 요소 선택하기</h2>
+
+    <h3>[document.querySelector 사용하기]</h3>
+    <section id="wrap">
+        <article class="box1">TEXT1</article>
+        <article class="box2">TEXT2</article>
+        <article class="box3">TEXT3</article>
+    </section>
+    
+    <h3>[부모, 자식, 형제 요소 선택하기]</h3>
+    <h6>📌 자식/부모/형제 요소 선택하기</h6>
+    <ul class="list">
+        <li class="item1">item1</li>
+        <li class="item2">item2</li>
+        <li class="item3">item3</li>
+        <li class="item4">item4</li>
+    </ul>
+    <h6>📌 제일 가까운 상위 부모 요소 선택하기</h6>
+    <main>
+        <section>
+            <article>
+                <ul>
+                    <li><p>list</p></li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+
+    <!-- null값 나오던 이유 : html 보다 js가 먼저 실행되었기 때문! -> 가장 아래로 옮겨주면 해결 -->
+    <script type="text/javascript" src="/js/06-2.js"></script> 
+</body>
+</html>
