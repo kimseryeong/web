@@ -1,3 +1,6 @@
+v = document.getElementById("my_video");
+v.playbackRate = 0.4
+
 const ver = navigator.userAgent;
 console.log(ver);
 

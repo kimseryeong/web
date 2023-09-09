@@ -32,7 +32,7 @@ header .inner h1{
 }
 header .inner h1 a{
 	font-weight:bold;
-	font-size: 24px;
+	font-size: 30px;
 	line-height: 1;
 	font-family: 'Dongle', sans-serif;
 	color: #444;
@@ -48,7 +48,7 @@ header .inner .util li{
 header .inner .util li a{
 	display: block;
 	font-weight:bold;
-	font-size: 24px;
+	font-size: 20px;
 	line-height: 1;
 	font-family: 'Dongle', sans-serif;
 	color: #999;
@@ -112,7 +112,7 @@ figure .inner p{
 	font: 24px;
 	line-height: 1.4;
 	font-family: 'Dongle', sans-serif;
-	color: #888;
+	color: hsl(0, 0%, 100%);
 	margin-bottom: 60px;
 }
 figure .inner a{
